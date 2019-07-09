@@ -5,19 +5,15 @@
 #Stooge Sort: take a list of numbers, then sort the list
 def stoogeSort(A,first, last):
 	#print(len(A))
-	if last - first <=0:
-		return 
-		
-	if A[first] > A[last]:
-		temp = A[last]
-		A[last] = A[first]
-		A[first] = temp
-	oneThird = (last - first +1)/3
 
-	if (last-first+1) >= 3:
-		oneThird = oneThird = (last - first +1)/3
+	if A[first] > A[last]:
+		A[first], A[last] = A[last], A[first]
+
+	if (last-first+1) > 2:
+		oneThird = oneThird = (last - first +1)//3
 		stoogeSort(A, first, last - oneThird)
 		stoogeSort(A, first + oneThird, last)
 		stoogeSort(A, first, last- oneThird)
 
+	return
 
