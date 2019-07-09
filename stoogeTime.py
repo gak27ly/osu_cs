@@ -5,7 +5,7 @@ import random
 import time
 from stoogeSort import stoogeSort
 
-for n in range(100, 1100, 100):
+for n in range(100, 1600, 150):
 	print("The size of the array is %d" %n)
 	total = 0
 	for j in range(3):
