@@ -1,3 +1,6 @@
+#CS325-400 HW2
+#Name: Yuan Li
+#Email: liyu4@orgeonstate.edu	
 from stoogeSort import stoogeSort
 
 file = open("data.txt","r")
