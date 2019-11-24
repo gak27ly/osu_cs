@@ -4,28 +4,28 @@ var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use('public', express.static('public'));
+app.use('/public', express.static('public'));
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 7966);
 
 
 app.get('/', function(req, res) {
-    res.render('home');
+    res.render('homePage');
 });
 
-app.get('/teams' function(req,res)){
+app.get('/teams', function(req,res){
 	res.render('teams');
-}
+});
 
 
-app.get('/players' function(req,res)){
+app.get('/players', function(req,res){
 	res.render('players');
-}
+});
 
-app.get('/forecast' function(req,res)){
+app.get('/forecast', function(req,res){
 	res.render('forecast');
-}
+});
 
 
 app.use(function(req,res){

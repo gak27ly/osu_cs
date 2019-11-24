@@ -7,15 +7,52 @@
 	<link rel="stylesheet" type="text/css" href="/public/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="/public/slick/slick-theme.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 
+<style>
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+
 <body>
-	<div class="menue">
+	<div class="menu">
 		<ul>
-			<li><a href="/">HomePage</a></li>
-			<li><a href="/teams"></a></li>
-			<li><a href="/players"></a></li>
-			<li><a href="/forecast"></a></li>
+			<li><a class = active href="/">HomePage</a></li>
+			<li><a href="/teams">teams</a></li>
+			<li><a href="/players">players</a></li>
+			<li><a href="/forecast">forecast</a></li>
 		</ul>
 	</div>
 	
