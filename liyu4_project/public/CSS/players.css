@@ -1,0 +1,33 @@
+.outLink ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.outLink li {
+    float: left;
+  }
+  
+.outLink li a {
+      display: block;
+      color: blue;
+      text-align: center;
+      font-family: georgia;
+      font-size: 20px;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+.outLink li a:hover:not(.active) {
+      background-color: aqua;
+  }
+
+.head{
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: solid black 1px;
+  padding: 2px;
+}
